@@ -31,7 +31,22 @@ from src.validate import REQUIRED_COLUMNS, validate_data
 DB_PATH = Path(os.environ.get("AI_ANOMALY_AGENT_DB_PATH", str(DEFAULT_DB_PATH)))
 logger = logging.getLogger(__name__)
 
-st.set_page_config(page_title="AI Data Anomaly Agent", page_icon="📈", layout="wide")
+st.set_page_config(
+    page_title="AI Data Anomaly Agent",
+    page_icon=str(Path(__file__).resolve().parent / "assets" / "blank_favicon.png"),
+    layout="wide",
+)
+st.markdown(
+    """<style>
+    footer,
+    [data-testid="stFooter"],
+    .viewerBadge_container__1QSob {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    </style>""",
+    unsafe_allow_html=True,
+)
 st.title("AI Data Anomaly Agent")
 st.caption(
     "A local portfolio project that checks daily business data, compares each day "
@@ -68,7 +83,7 @@ with st.sidebar:
             )
             for metric in METRIC_COLUMNS
         }
-    st.caption(f"SQLite file: `{DB_PATH}`")
+    st.caption("Analysis history is stored locally on this computer.")
 
 uploaded_file = st.file_uploader("Choose a CSV or Excel (.xlsx) file", type=["csv", "xlsx"])
 

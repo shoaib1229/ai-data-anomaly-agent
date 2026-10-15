@@ -17,6 +17,7 @@ def test_dashboard_upload_renders_history_and_anomaly_views(tmp_path, monkeypatc
     assert any("AI Data Anomaly Agent" in item.value for item in app.title)
     assert any("Revenue trend" in item.value for item in app.subheader)
     assert any("Analysis history" in item.value for item in app.subheader)
+    assert not any(str(tmp_path) in item.value for item in app.caption)
 
 
 def test_dashboard_malformed_upload_shows_safe_error(tmp_path, monkeypatch) -> None:
