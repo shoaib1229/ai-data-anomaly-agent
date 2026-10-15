@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.log
+*.tmp
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Local configuration and data stores
+.env
+.env.*
+!.env.example
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
