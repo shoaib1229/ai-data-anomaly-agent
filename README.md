@@ -2,6 +2,36 @@
 
 A local-first portfolio project for checking daily business metrics, finding unusual movements, and explaining the signals in plain English. It demonstrates practical data engineering patterns with Python, pandas, SQLite, deterministic anomaly rules, and a Streamlit dashboard. It does not claim an anomaly has a particular cause.
 
+## 🚀 Live Demo
+
+**Try the AI Data Anomaly Agent online:** [Launch Live App](https://ai-data-anomaly-agent.streamlit.app/)
+
+Explore the dashboard, upload a sample business metrics dataset, review validation results, inspect detected anomalies, and explore analysis history.
+
+## 🎬 Demo Videos
+
+Watch the project demonstrations:
+
+- [Demo Video 1 — View on Google Drive](https://drive.google.com/file/d/1Rf2z4xGFZ7a5oSI3QRf-I6Fd5fDJhvr9/view?usp=sharing)
+- [Demo Video 2 — View on Google Drive](https://drive.google.com/file/d/1UTUC36G6FBuyGXs60pP-GXd89GxqvJb3/view?usp=sharing)
+
+## 📊 Sample Dataset
+
+You can use the included synthetic dataset to test the application without preparing your own data.
+
+- **Sample CSV:** [`data/sample/daily_business_metrics.csv`](data/sample/daily_business_metrics.csv)
+- **Live application:** [Open AI Data Anomaly Agent](https://ai-data-anomaly-agent.streamlit.app/)
+
+### How to try the demo
+
+1. Open the [live application](https://ai-data-anomaly-agent.streamlit.app/).
+2. Download the sample CSV from this repository.
+3. Upload the CSV using the dashboard's file uploader.
+4. Review the validation report, detected anomalies, severity levels, and explanations.
+5. Explore the analysis history and alert preview.
+
+The dataset contains synthetic business metrics for demonstration purposes. Anomaly findings are rule-based review signals, not proof of a business problem or its cause.
+
 ## Business problem
 
 Daily revenue, orders, conversion rate, traffic, costs, and refunds can shift unexpectedly. This application helps a reviewer spot data-quality problems and changes that may deserve attention. It keeps ingestion, validation, baseline calculation, anomaly detection, explanation, persistence, and presentation as separate steps so the analysis can be inspected and tested.
