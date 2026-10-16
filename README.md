@@ -4,23 +4,24 @@ A local-first portfolio project for checking daily business metrics, finding unu
 
 ## 🚀 Live Demo
 
-**Try the AI Data Anomaly Agent online:** [Launch Live App](https://ai-data-anomaly-agent.streamlit.app/)
+**Try the application:** [Launch AI Data Anomaly Agent](https://ai-data-anomaly-agent.streamlit.app/)
 
-Explore the dashboard, upload a sample business metrics dataset, review validation results, inspect detected anomalies, and explore analysis history.
+## 📊 Datasets
 
-## 🎬 Demo Videos
+Use the following datasets to test the application:
 
-Watch the project demonstrations:
+- [Dataset 1 — Download/View on Google Drive](https://drive.google.com/file/d/1Rf2z4xGFZ7a5oSI3QRf-I6Fd5fDJhvr9/view?usp=sharing)
+- [Dataset 2 — Download/View on Google Drive](https://drive.google.com/file/d/1UTUC36G6FBuyGXs60pP-GXd89GxqvJb3/view?usp=sharing)
+- [Built-in sample dataset — daily_business_metrics.csv](data/sample/daily_business_metrics.csv)
 
-- [Demo Video 1 — View on Google Drive](https://drive.google.com/file/d/1Rf2z4xGFZ7a5oSI3QRf-I6Fd5fDJhvr9/view?usp=sharing)
-- [Demo Video 2 — View on Google Drive](https://drive.google.com/file/d/1UTUC36G6FBuyGXs60pP-GXd89GxqvJb3/view?usp=sharing)
+### How to use the datasets
 
-## 📊 Sample Dataset
+1. Open the [live application](https://ai-data-anomaly-agent.streamlit.app/).
+2. Open a dataset link above and download the file to your computer.
+3. Upload the downloaded CSV or Excel file using the dashboard's file uploader.
+4. Review the validation report, detected anomalies, severity levels, explanations, and analysis history.
 
-You can use the included synthetic dataset to test the application without preparing your own data.
-
-- **Sample CSV:** [`data/sample/daily_business_metrics.csv`](data/sample/daily_business_metrics.csv)
-- **Live application:** [Open AI Data Anomaly Agent](https://ai-data-anomaly-agent.streamlit.app/)
+**Note:** The application expects the required business-metric columns described below. If either external dataset uses different column names or formats, adjust it to match the required schema before uploading.
 
 ### How to try the demo
 
